@@ -43,7 +43,7 @@ Usage
 
 Python
 Run the Python Script:
-Open a terminal and navigate to the directory containing the highridge_payments.py file.
+Open a terminal and navigate to the directory containing the Payment_Slip.py file.
 Run the script: Payment_Slip.py  
 
 Output:
@@ -54,7 +54,7 @@ To view the first few rows in the console, use the print statement already inclu
 
 R
 Run the R Script:
-Open the highridge_payments.R file in RStudio or an R terminal.
+Open the Payment_Slip.R file in RStudio or an R terminal.
 Run the script by clicking Run in RStudio
 
 Output: The dataset is saved as an R data frame (workers).
