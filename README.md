@@ -1,69 +1,92 @@
-# Module-1-BAN6420-ASSIGNMENT
+# Module-1-BAN6420-ASSIGNMENT BY CHIGOZIE FAVOUR TOCHUKWU
 
 Highridge Construction Company Payment Slips
 
 Overview
-This project involves generating and managing weekly payment slips for 400 workers of the Highridge Construction Company. 
-The script dynamically creates a dataset, assigns employee levels based on salary and gender, and includes exception handling to ensure robust execution.
-Features
-Dynamic Worker Generation:
 
-Creates a dataset for 400 workers with unique IDs, random salaries, and genders.
-Conditional Logic for Level Assignment:
+This project involves generating and managing weekly payment slips for 400 workers at Highridge Construction Company. The goal is to dynamically create a dataset of workers, assign employee levels based on specific conditions, and handle errors efficiently. The implementation is provided in both Python and R.
+
+Features
+Dynamic Worker Generation
+
+Creates a dataset of 400 workers with unique IDs, random salaries, and genders.
+Conditional Logic for Level Assignment
 
 Employees with salaries between $10,000 and $20,000 are assigned "A1".
 Female employees with salaries between $7,500 and $30,000 are assigned "A5-F".
-Error Handling:
+Error Handling
 
-Utilizes tryCatch() to handle potential errors during worker record creation.
-Efficient Data Handling:
+Exception handling is implemented in both Python and R to manage potential runtime errors.
+Cross-Language Implementation
 
-Built using the dplyr package for streamlined data manipulation.
+The same functionality is provided in both Python and R for flexibility.
+
 Prerequisites
 
+Python 3.8 or higher
+Required Libraries:
+pandas
+Install dependencies using: pip install pandas  
+
 R (Version 4.0 or higher)
-RStudio (Optional, for an enhanced development environment)
+Required Packages:
+dplyr
+Install dependencies using: install.packages("dplyr")  
 
-Required packages:
-dplyr (Install using install.packages("dplyr"))
+Files Included
+Python Implementation: Payment_Slip.py
+R Implementation: Payment_Slip.R
+README: Instructions for usage and setup.
 
-Installation
-Install R:
-Download and install R from CRAN.
 
-Install RStudio (Optional):
-Download and install RStudio from RStudio.
+Usage
 
-Install Required Package:
-Open R or RStudio and run:
+Python
+Run the Python Script:
+Open a terminal and navigate to the directory containing the highridge_payments.py file.
+Run the script: Payment_Slip.py  
 
-install.packages("dplyr")
+Output:
+The script generates a CSV file named worker_payments.csv containing the worker dataset.
+To view the first few rows in the console, use the print statement already included in the script
 
-Usage Instructions
-Clone or Download the Script:
-Save the R script file (highridge_payments.R) to your computer.
 
-Run the Script:
-Open the script in RStudio or an R terminal and execute it. The following steps are included in the script:
 
-Worker dataset generation.
-Conditional employee level assignment.
-Error handling for robust execution.
-View the Data:
+R
+Run the R Script:
+Open the highridge_payments.R file in RStudio or an R terminal.
+Run the script by clicking Run in RStudio
 
-Use print(workers) to display the dataset in the console.
-Use View(workers) to open the dataset in a tab for inspection.
+Output: The dataset is saved as an R data frame (workers).
+Use View(workers) to inspect the data.
+Modify print limits if needed: options(max.print = 10000)  
 
-Modify Output Limits (if necessary):
-If output is truncated, adjust the print limit:
 
-options(max.print = 10000) 
+Example of Output:
 
-   id  salary gender level
-1   1  18567   Male    A1
-2   2  25341 Female  A5-F
-3   3   9468   Male Unassigned
-4   4  11234 Female    A1 ...
+Sample rows from the generated dataset:
+   id  salary gender    level  
+1   1  18567   Male      A1  
+2   2  25341 Female    A5-F  
+3   3   9468   Male Unassigned  
+4   4  11234 Female      A1  
+
+
+Additional Note
+Both scripts use random seed values for reproducibility:
+
+Python: random.seed(42)
+R: set.seed(42)
+Change the seed to generate different datasets.
+Outputs can be further customized to include additional worker attributes if needed.
 
 License
-This project is open-source and can be modified or distributed for educational purposes.
+This project is open-source and can be modified or distributed for educational and non-commercial purposes.
+
+
+
+
+
+
+
+
